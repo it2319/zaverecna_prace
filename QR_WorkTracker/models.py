@@ -21,7 +21,9 @@ class sessionStatus(models.TextChoices):
     COMPLETED = "completed", "Completed"
     CANCELLED = "cancelled", "Cancelled"
 
-class pauseReason(models.TextChoices):
+class Status(models.TextChoices):
+    START = "start", "Start"
+    END = "end", "End"
     BREAK = "break", "Break"
     MAINTENANCE = "maintenance", "Maintenance"
     OTHER = "other", "Other"
@@ -72,14 +74,11 @@ class WorkSession(models.Model):
     default=sessionStatus.ACTIVE
   )
   
-class Pause(models.Model):
+class Time(models.Model):
   work_session = models.ForeignKey(WorkSession, on_delete=models.CASCADE)
-  start_time = models.DateTimeField()
-  end_time = models.DateTimeField (null=True,blank=True)
-  reason = models.CharField(
+  time = models.DateTimeField()
+  status = models.CharField(
     max_length=20,
-    choices=pauseReason.choices,
-    default=pauseReason.BREAK
+    choices=Status.choices,
+    default=Status.START
   )
-  explanation = models.TextField (blank=True)
-

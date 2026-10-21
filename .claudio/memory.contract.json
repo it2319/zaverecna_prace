@@ -1,0 +1,282 @@
+{
+  "version": "1",
+  "workspaceId": "7a01d9114ed291f1",
+  "workspaceName": "zaverecna_prace",
+  "enabled": true,
+  "updatedAt": "2026-10-21T09:54:24.863Z",
+  "detectedStack": {
+    "languages": [
+      "Python"
+    ],
+    "frameworks": [
+      "Django"
+    ],
+    "packageManager": "pip",
+    "uiLibraries": [],
+    "orm": [],
+    "authLibraries": [],
+    "validationLibraries": [],
+    "paymentLibraries": [],
+    "testTools": [],
+    "scripts": {},
+    "importantDirs": [],
+    "sensitiveFiles": [
+      "QR_WorkTracker/admin.py",
+      "QR_WorkTracker/migrations/0001_initial.py",
+      "QR_WorkTracker/migrations/0002_alter_job_id_alter_job_machine_id_alter_machine_id_and_more.py",
+      "QR_WorkTracker/migrations/__init__.py",
+      "accounts/admin.py",
+      "accounts/migrations/0001_initial.py",
+      "accounts/migrations/0002_alter_workerprofile_id.py",
+      "accounts/migrations/__init__.py",
+      "dashboard/__init__.py",
+      "dashboard/admin.py",
+      "dashboard/apps.py",
+      "dashboard/migrations/__init__.py",
+      "dashboard/models.py",
+      "dashboard/tests.py",
+      "dashboard/views.py"
+    ]
+  },
+  "sections": {
+    "stack": [
+      {
+        "id": "7ea320cfaef4fe23",
+        "text": "Python frameworks detected: Django.",
+        "kind": "fact",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      }
+    ],
+    "packageManager": [],
+    "architectureRules": [],
+    "codingConventions": [],
+    "sensitiveFiles": [
+      {
+        "id": "21964494523ca02d",
+        "text": "Admin area: QR_WorkTracker/admin.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "QR_WorkTracker/admin.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "75b88c045affd0d9",
+        "text": "Database migrations: QR_WorkTracker/migrations/0001_initial.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "QR_WorkTracker/migrations/0001_initial.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "ec979fa7f5ffed6c",
+        "text": "Database migrations: QR_WorkTracker/migrations/__init__.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "QR_WorkTracker/migrations/__init__.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "e2d081488318a5f8",
+        "text": "Admin area: accounts/admin.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "accounts/admin.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "dce2db90e1204e79",
+        "text": "Database migrations: accounts/migrations/0001_initial.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "accounts/migrations/0001_initial.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "f8b4ceccc7241c8b",
+        "text": "Database migrations: accounts/migrations/__init__.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "accounts/migrations/__init__.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "055483e082c51e56",
+        "text": "Dashboard area: dashboard/__init__.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/__init__.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "99b3a27cf4d37dc8",
+        "text": "Admin area: dashboard/admin.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/admin.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "b954ad7fdd87079a",
+        "text": "Dashboard area: dashboard/apps.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/apps.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "fbad0b325605f8f9",
+        "text": "Dashboard area: dashboard/migrations/__init__.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/migrations/__init__.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "919a35df0793031e",
+        "text": "Dashboard area: dashboard/models.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/models.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "92c274b1fdf2b2b6",
+        "text": "Dashboard area: dashboard/tests.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/tests.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "a7ac5bd00bfea87f",
+        "text": "Dashboard area: dashboard/views.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "dashboard/views.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "66fe36f91e3ab829",
+        "text": "Database migrations: QR_WorkTracker/migrations/0002_alter_job_id_alter_job_machine_id_alter_machine_id_and_more.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "QR_WorkTracker/migrations/0002_alter_job_id_alter_job_machine_id_alter_machine_id_and_more.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      },
+      {
+        "id": "8af0a79a79d5d65d",
+        "text": "Database migrations: accounts/migrations/0002_alter_workerprofile_id.py",
+        "kind": "risk",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "accounts/migrations/0002_alter_workerprofile_id.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      }
+    ],
+    "forbiddenActions": [
+      {
+        "id": "679ecfe225e34bfc",
+        "text": "Never log or commit values for env names: SECRET_KEY.",
+        "kind": "constraint",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      }
+    ],
+    "allowedCommands": [
+      {
+        "id": "f832089ea9e13a1c",
+        "text": "python manage.py migrate -> apply Django migrations.",
+        "kind": "command",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "manage.py"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      }
+    ],
+    "businessRules": [],
+    "integrationRules": [
+      {
+        "id": "028fcdf1303971b6",
+        "text": "Project ships with Docker. Verify Docker build before considering deploy ready.",
+        "kind": "constraint",
+        "source": "repo_detected",
+        "confidence": "confirmed",
+        "scope": "workspace",
+        "evidence": {
+          "file": "Dockerfile"
+        },
+        "lastVerifiedAt": "2026-10-21T09:54:24.862Z"
+      }
+    ],
+    "testingExpectations": [],
+    "agentInstructions": [],
+    "openQuestions": []
+  }
+}
