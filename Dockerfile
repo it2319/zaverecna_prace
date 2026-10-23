@@ -10,6 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+RUN python manage.py collectstatic --noinput
+
 RUN adduser --system --group app \
     && mkdir -p /app/data \
     && chown -R app:app /app/data \

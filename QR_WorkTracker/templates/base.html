@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}QR WorkTracker{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Záhlaví -->
+    {% include 'page/header.html' %}
+    <!-- Obsah stránky -->
+    <main class="container flex-grow-1 py-4">
+    {% block content %}{% endblock %}
+    </main>
+    <!-- Bootstrap JS (bundle obsahuje i Popper, jQuery už Bootstrap 5 nepotřebuje) -->
+    <script src="{% static 'bootstrap/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
