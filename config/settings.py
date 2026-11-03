@@ -31,7 +31,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECRET_KEY = 'django-insecure-m&5t&nsi)z3+xk)elbz5(d3e1uxv)twlq*7(m_83+30j0c%3$+'
 SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-insecure-key")
 DEBUG = os.environ.get("DEBUG", "0") == "1"
-
+DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///db.sqlite3")
 ALLOWED_HOSTS = env_list("ALLOWED_HOSTS", "localhost,127.0.0.1")
 
 
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'dashboard',
     'QR_WorkTracker',
 ]
 
@@ -138,3 +137,7 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
