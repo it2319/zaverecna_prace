@@ -1,0 +1,22 @@
+/* Záhlaví */
+.site-header {
+    background: linear-gradient(135deg, #0f2a3d 0%, #155e75 100%);
+    border-bottom: 4px solid #f59e0b;
+}
+
+.header-eyebrow {
+    letter-spacing: 0.22em;
+    font-size: 0.78rem;
+    color: #fcd34d;
+}
+
+.header-lead {
+    max-width: 42rem;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.header-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+}
