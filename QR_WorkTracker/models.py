@@ -1,6 +1,11 @@
 from django.db import models
 from django.utils import timezone
 from accounts.models import WorkerProfile
+import secrets
+
+
+def generate_qr_token():
+    return secrets.token_urlsafe(32)
 
 class machineStatus(models.TextChoices):
     ACTIVE = "active", "Active"
@@ -23,7 +28,7 @@ class Machine(models.Model):
   name = models.CharField(max_length=100)
   code = models.CharField (max_length=50, unique=True)
   description = models.TextField (blank=True)
-  qr_token = models.CharField (unique=True, max_length=255)
+  qr_token = models.CharField (unique=True, max_length=255,editable=False, default=generate_qr_token)
   status = models.CharField(
         max_length=20,
         choices=machineStatus.choices,

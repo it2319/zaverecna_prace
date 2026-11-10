@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}QR stroje {{ machine.code }} | QR WorkTracker{% endblock %}
+
+{% block content %}¨
+<div class="text-center">
+  <h2 class="mb-1">Stroj {{ machine.code }}</h2>
+  <p class="text-secondary mb-4">{{ machine.name }}</p>
+
+  <div class="card shadow-sm d-inline-block p-3 bg-white border-0">
+    <img id="qr" src="{% url 'qr_image' machine.code %}" alt="QR kód stroje {{ machine.code }}" width="320" height="320">
+  </div>
+</div>
+
+<script>
+  const img = document.getElementById("qr");
+  const imageUrl = "{% url 'qr_image' machine.code %}";
+  const clock = document.getElementById("clock");
+
+  setInterval(() => { img.src = imageUrl + "?t=" + Date.now(); }, 15000);
+  setInterval(() => { clock.textContent = new Date().toLocaleTimeString("cs-CZ"); }, 1000);
+</script>
+{% endblock %}

@@ -141,3 +141,4 @@ MAILERS = {
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
+PUBLIC_BASE_URL = 'https://effective-telegram-wr7j6w97457gh544v-8000.app.github.dev'
